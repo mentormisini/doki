@@ -15,21 +15,21 @@
         </div>
         <div class="tabremove" data-tab="standard" id="stopAlarm" style="border:1px solid red;">STOP</div>
     </div>
+    <div class="brief" style="display:flex;justify-content: space-between;margin:0 10px 0 10px">
+        <h4 style="font-weight: normal"  id="statusLabel"></h4>
+        <h4 style="font-weight: normal"  id="timer"></h4>
+    </div>
     <div class="tabs">
         <div class="tab active" data-tab="basic">
 
             <h3  style="font-weight: lighter">Select your rule</h3>
             <div class="radioRule">
-                <label><input type="radio"  name="alarmInterval" value="20" id="2020_rule">20 20 20 Rule</label>
-                <label><input type="radio"  name="alarmInterval" value="40" id="standard_rule">Pomodoro Technique</label>
+                <label style="width:100%" class="flex"><input type="radio"  name="alarmInterval" value="20" id="2020_rule"><span style="margin-top:4px">
+                    20 20 20 Rule</span></label>
+                <label style="width:100%" class="flex"><input type="radio"  name="alarmInterval" value="40" id="standard_rule"><span style="margin-top:4px">
+                    Pomodoro </span></label>
             </div>
-
-            <div class="brief" style="display:inline-flex;justify-content: space-between">
-                <h4 style="font-weight: normal"  id="statusLabel"></h4>
-                <h4 style="font-weight: normal"  id="timer"></h4>
-            </div>
-
-
+            <br>
             <div class="brief" id="doki"></div>
 
             <ul class="features">

@@ -109,18 +109,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+
 // JavaScript to display dynamic text
 document.addEventListener('DOMContentLoaded', function() {
     displayDynamicText();
-    console.log("CALLED");
 });
 
 function displayDynamicText() {
-    // Choose a random word from the dynamicWords array
     const randomIndex = Math.floor(Math.random() * dynamicWords.length);
     const randomWord = dynamicWords[randomIndex];
 
-    // Display the random word
     const dataDisplay = document.getElementById('dataDisplay');
     dataDisplay.textContent = randomWord;
 }
