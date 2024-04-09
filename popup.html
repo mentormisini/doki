@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <script src="popup.js"></script>
+    <script src="words.js"></script> <!-- Include your words.js file -->
+</head>
+<body>
+<div class="tabs-container">
+
+    <div class="tab-btns">
+        <div class="tab-btn active" id="createAlarm" data-tab="basic" style="width:150px;">
+            START DOKI
+        </div>
+        <div class="tabremove" data-tab="standard" id="stopAlarm" style="border:1px solid red;">STOP</div>
+    </div>
+    <div class="tabs">
+        <div class="tab active" data-tab="basic">
+
+            <h3  style="font-weight: lighter">Select your rule</h3>
+            <div class="radioRule">
+                <label><input type="radio"  name="alarmInterval" value="20" id="2020_rule">20 20 20 Rule</label>
+                <label><input type="radio"  name="alarmInterval" value="40" id="standard_rule">Pomodoro Technique</label>
+            </div>
+
+            <div class="brief" style="display:inline-flex;justify-content: space-between">
+                <h4 style="font-weight: normal"  id="statusLabel"></h4>
+                <h4 style="font-weight: normal"  id="timer"></h4>
+            </div>
+
+
+            <div class="brief" id="doki"></div>
+
+            <ul class="features">
+
+                <li class="feature not-included">
+                    <h3 style="font-weight: lighter">Always remember</h3>
+                </li>
+                <li class="feature included">
+                    <h3 style="font-weight: lighter" id="dataDisplay"></h3>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
