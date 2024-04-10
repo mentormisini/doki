@@ -4,7 +4,9 @@
     <title>Popup</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <script src="popup.js"></script>
-    <script src="words.js"></script> <!-- Include your words.js file -->
+    <script src="db_store/words.js"></script>
+    <script src="core/suggestion_list.js"></script>
+    <script src="core/time_start.js"></script>
 </head>
 <body>
 <div class="tabs-container">
@@ -22,12 +24,12 @@
     <div class="tabs">
         <div class="tab active" data-tab="basic">
 
-            <h3  style="font-weight: lighter">Select your rule</h3>
+            <h3  style="font-weight: lighter">Select rule </h3>
             <div class="radioRule">
                 <label style="width:100%" class="flex"><input type="radio"  name="alarmInterval" value="20" id="2020_rule"><span style="margin-top:4px">
-                    20 20 20 Rule</span></label>
+                    20 20 20 Rule Care of eye</span></label>
                 <label style="width:100%" class="flex"><input type="radio"  name="alarmInterval" value="40" id="standard_rule"><span style="margin-top:4px">
-                    Pomodoro </span></label>
+                    Pomodoro Care of body </span></label>
             </div>
             <br>
             <div class="brief" id="doki"></div>

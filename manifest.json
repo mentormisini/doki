@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Timer Extension",
+  "name": "DOKI",
   "version": "1.0",
-  "description": "A Chrome extension that displays a timer.",
+  "description": "Guide helper for your body.",
   "permissions": [
     "alarms",
     "activeTab",
@@ -11,6 +11,7 @@
   "background": {
     "service_worker": "background.js"
   },
+
   "action": {
     "default_popup": "popup.html"
   }
